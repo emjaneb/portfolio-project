@@ -1,0 +1,15 @@
+.primary-font {
+  font-family: "Source Serif 4", serif;
+  font-weight: 600;
+  font-size: 62px;
+}
+
+.secondary-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.fa-github {
+  font-size: 40px;
+}

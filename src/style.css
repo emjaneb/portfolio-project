@@ -10,22 +10,22 @@
 }
 .hero h1 {
   font-family: var(--heading-font-family);
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .hero h2 {
   font-family: var(--body-font-family);
   font-weight: 300;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .btn-about {
   background-color: #859874;
   color: white;
   font-family: var(--body-font-family);
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
-  padding: 20px 35px;
+  padding: 17px 30px;
   margin: 30px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

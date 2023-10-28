@@ -1,15 +1,36 @@
-.primary-font {
-  font-family: "Source Serif 4", serif;
-  font-weight: 600;
-  font-size: 62px;
+:root {
+  --heading-font-family: "Source Serif 4", serif;
+  --body-font-family: "Roboto", sans-serif;
 }
 
-.secondary-font {
-  font-family: "Roboto", sans-serif;
+.hero {
+  text-align: center;
+  background-color: #f4f3ef;
+  padding: 130px;
+}
+.hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 120px;
+}
+
+.hero h2 {
+  font-family: var(--body-font-family);
   font-weight: 300;
-  font-size: 30px;
+  font-size: 36px;
 }
 
-.fa-github {
-  font-size: 40px;
+.btn-about {
+  background-color: #859874;
+  color: white;
+  font-family: var(--body-font-family);
+  font-size: 22px;
+  font-weight: 400;
+  padding: 20px 35px;
+  margin: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-about:hover {
+  background-color: #58684b;
+  color: #f4f3ef;
 }

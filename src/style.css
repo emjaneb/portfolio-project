@@ -22,7 +22,7 @@ h3 {
 
 .hero {
   background-color: #f4f3ef;
-  padding: 130px;
+  padding: 100px;
   width: 100%;
 }
 
@@ -56,22 +56,20 @@ h3 {
   font-size: 17px;
 }
 
-.projects-button {
-  padding-bottom: 30px;
-}
-
 .btn-projects {
-  background-color: #859874;
-  color: white;
+  color: #58684b;
+  border-color: #58684b;
+  border-width: 2px;
   font-family: var(--body-font-family);
-  font-size: 17px;
-  font-weight: 400;
-  padding: 17px 50px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 45px;
+  margin: 30px 0 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .btn-projects:hover {
-  background-color: #58684b;
+  background-color: #859874;
   color: #f4f3ef;
 }
 
@@ -97,7 +95,10 @@ h3 {
     font-size: 12px;
     font-weight: 400;
     padding: 10px 30px;
-    margin: 20px;
+  }
+
+  .btn-projects {
+    margin: 20px 0 10px;
   }
 }
 
@@ -110,5 +111,9 @@ h3 {
     width: 70%;
     display: block;
     margin: 0 auto;
+  }
+
+  .btn-projects {
+    margin: 5px 0 10px;
   }
 }

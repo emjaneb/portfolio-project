@@ -3,20 +3,27 @@
   --body-font-family: "Roboto", sans-serif;
 }
 
-.hero {
-  text-align: center;
-  background-color: #f4f3ef;
-  padding: 130px;
-}
-.hero h1 {
+h1 {
   font-family: var(--heading-font-family);
   font-size: 100px;
 }
 
-.hero h2 {
+h2 {
   font-family: var(--body-font-family);
   font-weight: 300;
   font-size: 30px;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.hero {
+  background-color: #f4f3ef;
+  padding: 130px;
+  width: 100%;
 }
 
 .btn-about {
@@ -34,22 +41,23 @@
   background-color: #58684b;
   color: #f4f3ef;
 }
-
-.carousel-inner img {
-  margin: auto;
-  padding: 30px;
+.container-fluid {
+  margin: 0;
+  padding: 20px;
 }
 
-.carousel-item {
-  background-color: #ffffff;
+.project-image {
+  border-radius: 5px;
 }
 
-.carousel-indicators {
-  bottom: -20px;
+.project-heading {
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  font-size: 17px;
 }
 
-.carousel-dark {
-  margin-bottom: 15px;
+.projects-button {
+  padding-bottom: 30px;
 }
 
 .btn-projects {
@@ -59,11 +67,48 @@
   font-size: 17px;
   font-weight: 400;
   padding: 17px 50px;
-  margin: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .btn-projects:hover {
   background-color: #58684b;
   color: #f4f3ef;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .hero {
+    padding: 70px;
+  }
+
+  .btn-about,
+  .btn-projects {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 30px;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-heading {
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+  .project-image {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
 }

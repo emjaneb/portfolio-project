@@ -34,3 +34,36 @@
   background-color: #58684b;
   color: #f4f3ef;
 }
+
+.carousel-inner img {
+  margin: auto;
+  padding: 30px;
+}
+
+.carousel-item {
+  background-color: #ffffff;
+}
+
+.carousel-indicators {
+  bottom: -20px;
+}
+
+.carousel-dark {
+  margin-bottom: 15px;
+}
+
+.btn-projects {
+  background-color: #859874;
+  color: white;
+  font-family: var(--body-font-family);
+  font-size: 17px;
+  font-weight: 400;
+  padding: 17px 30px;
+  margin: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-projects:hover {
+  background-color: #58684b;
+  color: #f4f3ef;
+}

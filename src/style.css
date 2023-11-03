@@ -20,6 +20,17 @@ h3 {
   font-size: 35px;
 }
 
+div.container-fluid.navbar {
+  padding: 0 20px;
+}
+.navbar {
+  background-color: #ebeae6;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font-family);
+}
+
 .hero {
   background-color: #f4f3ef;
   padding: 100px;

@@ -3,23 +3,6 @@
   --body-font-family: "Roboto", sans-serif;
 }
 
-.landing-heading {
-  font-family: var(--heading-font-family);
-  font-size: 100px;
-}
-
-.landing-subhead {
-  font-family: var(--body-font-family);
-  font-weight: 300;
-  font-size: 30px;
-}
-
-.featured-projects {
-  font-family: var(--heading-font-family);
-  margin-bottom: 20px;
-  font-size: 35px;
-}
-
 .navbar {
   background-color: #ebeae6;
 }
@@ -28,13 +11,25 @@
   font-family: var(--heading-font-family);
 }
 
-a .nav-link {
+.nav-link {
   font-family: var(--body-font-family);
 }
+
 .hero {
   background-color: #f4f3ef;
   padding: 100px;
   width: 100%;
+}
+
+.hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 100px;
+}
+
+.hero h2 {
+  font-family: var(--body-font-family);
+  font-weight: 300;
+  font-size: 30px;
 }
 
 .btn-about {
@@ -56,6 +51,12 @@ a .nav-link {
 .projects-section {
   margin: 0;
   padding: 20px;
+}
+
+.projects-section h3 {
+  font-family: var(--heading-font-family);
+  margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .project-image {

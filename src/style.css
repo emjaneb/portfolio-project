@@ -3,26 +3,23 @@
   --body-font-family: "Roboto", sans-serif;
 }
 
-h1 {
+.landing-heading {
   font-family: var(--heading-font-family);
   font-size: 100px;
 }
 
-h2 {
+.landing-subhead {
   font-family: var(--body-font-family);
   font-weight: 300;
   font-size: 30px;
 }
 
-h3 {
+.featured-projects {
   font-family: var(--heading-font-family);
   margin-bottom: 20px;
   font-size: 35px;
 }
 
-div.container-fluid.navbar {
-  padding: 0 20px;
-}
 .navbar {
   background-color: #ebeae6;
 }
@@ -31,6 +28,9 @@ div.container-fluid.navbar {
   font-family: var(--heading-font-family);
 }
 
+a .nav-link {
+  font-family: var(--body-font-family);
+}
 .hero {
   background-color: #f4f3ef;
   padding: 100px;
@@ -52,7 +52,8 @@ div.container-fluid.navbar {
   background-color: #58684b;
   color: #f4f3ef;
 }
-.container-fluid {
+
+.projects-section {
   margin: 0;
   padding: 20px;
 }
@@ -84,16 +85,20 @@ div.container-fluid.navbar {
   color: #f4f3ef;
 }
 
+#navbar {
+  padding: 0 20px;
+}
+
 @media (max-width: 992px) {
-  h1 {
+  .landing-heading {
     font-size: 50px;
   }
 
-  h2 {
+  .landing-subhead {
     font-size: 25px;
   }
 
-  h3 {
+  .featured-projects {
     font-size: 25px;
   }
 

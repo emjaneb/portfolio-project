@@ -15,18 +15,18 @@
   font-family: var(--body-font-family);
 }
 
-.hero {
+.homepage-hero {
   background-color: #f4f3ef;
   padding: 100px;
   width: 100%;
 }
 
-.hero h1 {
+.homepage-hero h1 {
   font-family: var(--heading-font-family);
   font-size: 100px;
 }
 
-.hero h2 {
+.homepage-hero h2 {
   font-family: var(--body-font-family);
   font-weight: 300;
   font-size: 30px;
@@ -83,6 +83,79 @@
 
 .btn-projects:hover {
   background-color: #859874;
+  color: #f4f3ef;
+}
+
+.about-header {
+  background-color: #f4f3ef;
+  padding: 70px;
+  width: 100%;
+}
+
+.about-header h1 {
+  font-family: var(--heading-font-family);
+  font-size: 70px;
+}
+
+.about-section {
+  padding: 50px;
+}
+
+.about-container h1 {
+  margin-bottom: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 80px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headshot {
+  max-width: 450px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.about-section p {
+  font-family: var(--body-font-family);
+  margin: 45px 20px 0 0;
+  padding-right: 100px;
+  font-size: 14px;
+}
+
+.skills-section {
+  background-color: #f4f3ef;
+  padding: 50px 100px;
+  margin: 30px 0;
+}
+
+.skills-section h2 {
+  font-family: var(--heading-font-family);
+}
+
+.skills-section p {
+  font-family: var(--body-font-family);
+  padding: 15px 50px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.btn-contact {
+  background-color: #859874;
+  color: white;
+  font-family: var(--body-font-family);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 17px 50px;
+  margin: 40px 0 30px 150px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn-contact:hover {
+  background-color: #58684b;
   color: #f4f3ef;
 }
 

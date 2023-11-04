@@ -30,17 +30,17 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="navbar container-fluid" id="navbar">
-            <a class="navbar-brand" href="/index.html">Emma Bartley</a>
+            <a class="navbar-brand" href="/index.html" title="Emma Bartley Homepage">Emma Bartley</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="/index.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="/about.html">About</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/index.html" title="Home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/about.html" title="About">About</a>
+                    <a class="nav-link" href="#" title="Projects">Projects</a>
+                    <a class="nav-link" href="#" title="Contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -51,13 +51,19 @@
         <h1 class="text-center">About Emma</h1>
     </div>
 
+    <!-- about grid -->
     <div class="about-section container">
-        <div class="row">
-            <div class="col-md-6 image-container">
+
+        <div class="row justify-content-center">
+
+            <!-- col 1 -->
+            <div class="col-xl-auto">
                 <img src="/images/emma-headshot.png" alt="headshot" class="img-fluid headshot">
             </div>
-            <div class="col-md-6">
-                <p class="text-center">
+
+            <!-- col 2 -->
+            <div class="col-xl-auto text-center">
+                <p>
                     Hi I’m Emma, a passionate junior front-end web developer from Melbourne,
                     Australia.
                     With a background originally in retail, I have recently started an exciting journey into the
@@ -92,12 +98,11 @@
         </div>
     </div>
 
-
-
     <!-- skills -->
     <div class="skills-section container-fluid text-center">
         <h2>Skills</h2>
-        <p>I have a growing proficiency in key programming languages and technologies, including HTML, CSS
+        <p class="skills-info">I have a growing proficiency in key programming languages and technologies, including
+            HTML, CSS
             and
             JavaScript. These
             skills have enabled me to create engaging, user-friendly web interfaces and bring my creative
@@ -109,12 +114,77 @@
             of
             front-end
             development.</p>
+        <div class="row">
+            <div class="col">
+                <img src="/images/html.png" alt="html-icon" class="skills-icon">
+                <p>HTML</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/css.png" alt="css-icon" class="skills-icon">
+                <p>CSS</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/javascript.png" alt="javascript-icon" class="skills-icon">
+                <p>JavaScript</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/vscode.png" alt="vscode-icon" class="skills-icon">
+                <p>VS Code</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/bootstrap.png" alt="bootstrap-icon" class="skills-icon">
+                <p>Bootstrap</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/github.png" alt="github-icon" class="skills-icon">
+                <p>GitHub</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="/images/flexbox.png" alt="flexbox-icon" class="skills-icon">
+                <p>Flexbox</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/hosting.png" alt="hosting-icon" class="skills-icon">
+                <p>Hosting</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/api.png" alt="api-icon" class="skills-icon">
+                <p>API</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/seo.png" alt="seo-icon" class="skills-icon">
+                <p>SEO</p>
+            </div>
+
+            <div class="col">
+                <img src="/images/responsive.png" alt="responsive-icon" class="skills-icon">
+                <p>Responsive</p>
+            </div>
+
+            <!-- 
+            <div class="col">
+                <img src="/images/react.png" alt="react-icon" class="skills-icon">
+                <p>React</p>
+            </div> -->
+
+        </div>
     </div>
 
-
-
-    <!-- contact -->
-    <a href="#" class="btn btn-contact">Contact Emma</a>
+    <!-- Projects Button -->
+    <div class="about-projects-button container-fluid text-center">
+        <a href="#" class="btn btn-primary" id="aboutProjectsButton" title="View Projects">View Emma's Projects</a>
+    </div>
 
 
 

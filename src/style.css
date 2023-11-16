@@ -157,6 +157,20 @@
   margin: 40px 0;
 }
 
+/* projects page */
+.projects-header {
+  background-color: #f4f3ef;
+  padding: 70px;
+  width: 100%;
+}
+
+.projects-header h1 {
+  font-family: var(--heading-font-family);
+  font-size: 70px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 #navbar {
   padding: 0 20px;
 }

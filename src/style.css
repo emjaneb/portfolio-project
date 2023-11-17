@@ -18,7 +18,7 @@
 /* homepage hero */
 .homepage-hero {
   background-color: #f4f3ef;
-  padding: 100px;
+  padding: 80px 0 70px;
   width: 100%;
 }
 
@@ -62,7 +62,7 @@
   font-size: 15px;
   font-weight: 500;
   padding: 15px 45px;
-  margin: 30px 0 20px;
+  margin: 30px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -79,8 +79,9 @@
 
 .projects-section h3 {
   font-family: var(--heading-font-family);
-  margin-bottom: 20px;
   font-size: 35px;
+  padding: 20px;
+  margin: 0;
 }
 
 .project-image {
@@ -277,9 +278,13 @@
 }
 
 @media (max-width: 768px) {
+  .projects-section {
+    padding: 20px 20px 0px;
+  }
+
   .project-heading {
     padding-bottom: 15px;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .project-image {
@@ -289,7 +294,7 @@
   }
 
   .btn-secondary {
-    margin: 5px 0 10px;
+    margin: 0 0 10px;
   }
 
   .homepage-hero {

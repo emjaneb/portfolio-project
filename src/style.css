@@ -168,7 +168,7 @@
 .projects-header h1 {
   font-family: var(--heading-font-family);
   font-size: 70px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .projects-page {
@@ -210,10 +210,6 @@
   padding: 70px;
 }
 
-.projects-paragraph p {
-  margin: ;
-}
-
 #navbar {
   padding: 0 20px;
 }
@@ -232,7 +228,8 @@
 
 @media (max-width: 992px) {
   .homepage-hero h1,
-  .about-header h1 {
+  .about-header h1,
+  .projects-header h1 {
     font-size: 50px;
   }
 
@@ -264,6 +261,20 @@
     margin: 0 20px 30px;
   }
 
+  .projects-page.project-image {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .project-information h5 {
+    font-size: 14px;
+  }
+
+  .project-information p {
+    font-size: 13px;
+  }
+
   #homepageAboutBtn,
   #homepageProjectBtn {
     font-size: 12px;
@@ -277,20 +288,39 @@
   }
 }
 
+@media (max-width: 930px) {
+  .view-project-btn,
+  .project-github-btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    font-size: 11px;
+  }
+
+  .projects-header h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 880px) {
+  .projects-section h5 {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .projects-section {
     padding: 20px 20px 0px;
-  }
-
-  .project-heading {
-    padding-bottom: 15px;
-    font-size: 14px;
   }
 
   .project-image {
     width: 70%;
     display: block;
     margin: 0 auto;
+  }
+
+  .projects-section h5 {
+    margin: 24px 0;
   }
 
   .btn-secondary {
@@ -316,6 +346,28 @@
   .skills-icon {
     max-width: 40px;
   }
+
+  .project-github-btn {
+    margin-bottom: 30px;
+  }
+
+  .project-information p,
+  .project-information h5 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 690px) {
+  .projects-section h5 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-information p,
+  .project-information h5 {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -325,6 +377,15 @@
 
   .skills-info {
     margin: 10px 0;
+  }
+
+  .projects-section h5 {
+    font-size: 12px;
+  }
+
+  .project-information p,
+  .project-information h5 {
+    font-size: 12px;
   }
 
   #aboutProjectsButton {

@@ -167,8 +167,50 @@
 .projects-header h1 {
   font-family: var(--heading-font-family);
   font-size: 70px;
-  padding: 20px;
   margin-bottom: 20px;
+}
+
+.projects-page {
+  padding: 50px;
+}
+
+.view-project-btn {
+  background-color: #859874;
+  color: white;
+  border-color: #859874;
+  margin-right: 10px;
+}
+
+.project-github-btn {
+  color: #58684b;
+  background-color: #ffffff;
+  border-color: #58684b;
+  margin-left: 10px;
+}
+
+.view-project-btn,
+.project-github-btn {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 7px 15px;
+  font-weight: 400;
+  border-width: 1px;
+}
+
+.view-project-btn:hover,
+.project-github-btn:hover {
+  background-color: #58684b;
+  border-color: #58684b;
+  color: #f4f3ef;
+}
+
+.projects-paragraph {
+  padding: 70px;
+}
+
+.projects-paragraph p {
+  margin: ;
 }
 
 #navbar {

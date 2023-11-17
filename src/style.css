@@ -2,6 +2,7 @@
   --heading-font-family: "Source Serif 4", serif;
   --body-font-family: "Roboto", sans-serif;
 }
+
 /* navbar */
 .navbar {
   background-color: #ebeae6;
@@ -18,6 +19,17 @@
 #navbar {
   padding: 0 20px;
 }
+
+/* about, project, contact header */
+.about-header h1,
+.contact-header h1,
+.projects-header h1 {
+  font-family: var(--heading-font-family);
+  font-size: 70px;
+  margin: 0;
+}
+
+/* homepage */
 
 /* homepage hero */
 .homepage-hero {
@@ -107,11 +119,6 @@
   width: 100%;
 }
 
-.about-header h1 {
-  font-family: var(--heading-font-family);
-  font-size: 70px;
-}
-
 /* about section */
 .about-section {
   padding: 50px;
@@ -163,22 +170,24 @@
 }
 
 /* projects page */
+
+/* header */
 .projects-header {
   background-color: #f4f3ef;
   padding: 70px;
   width: 100%;
 }
 
-.projects-header h1 {
-  font-family: var(--heading-font-family);
-  font-size: 70px;
-  margin: 0;
-}
-
+/* body */
 .projects-page {
   padding: 50px;
 }
 
+.projects-paragraph {
+  padding: 70px;
+}
+
+/* buttons */
 .view-project-btn {
   background-color: #859874;
   color: white;
@@ -210,24 +219,16 @@
   color: #f4f3ef;
 }
 
-.projects-paragraph {
-  padding: 70px;
-}
-
 /* contact page */
 
+/* header */
 .contact-header {
   background-color: #f4f3ef;
   padding: 70px;
   width: 100%;
 }
 
-.contact-header h1 {
-  font-family: var(--heading-font-family);
-  font-size: 70px;
-  margin: 0;
-}
-
+/* body */
 .contact-info {
   padding: 50px;
 }
@@ -236,6 +237,7 @@
   font-family: var(--body-font-family);
 }
 
+/* links */
 .email-link,
 .github-link {
   display: block;
@@ -243,7 +245,7 @@
   color: #58684b;
   font-size: 20px;
   margin-bottom: 50px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .email-link:hover,
@@ -254,26 +256,35 @@
 /* media queries */
 
 @media (max-width: 1200px) {
-  .headshot {
-    margin: 0 auto 40px;
-  }
-
   .about-section p {
     margin: 0 auto;
     text-align: center;
     max-width: 992px;
+  }
+
+  .headshot {
+    margin: 0 auto 40px;
   }
 }
 
 @media (max-width: 992px) {
   .homepage-hero h1,
   .about-header h1,
-  .projects-header h1 {
+  .projects-header h1,
+  .contact-header h1 {
     font-size: 50px;
   }
 
   .homepage-hero h2 {
     font-size: 25px;
+  }
+
+  .project-information h5 {
+    font-size: 14px;
+  }
+
+  .project-information p {
+    font-size: 13px;
   }
 
   .projects-section {
@@ -306,14 +317,6 @@
     margin: 0 auto;
   }
 
-  .project-information h5 {
-    font-size: 14px;
-  }
-
-  .project-information p {
-    font-size: 13px;
-  }
-
   #homepageAboutBtn,
   #homepageProjectBtn {
     font-size: 12px;
@@ -335,10 +338,6 @@
     width: 50%;
     font-size: 11px;
   }
-
-  .projects-header h1 {
-    font-size: 40px;
-  }
 }
 
 @media (max-width: 880px) {
@@ -348,6 +347,19 @@
 }
 
 @media (max-width: 768px) {
+  .project-information h5,
+  .project-information p {
+    font-size: 14px;
+  }
+
+  .projects-section h5 {
+    margin: 24px 0;
+  }
+
+  .about-section p {
+    max-width: 650px;
+  }
+
   .projects-section {
     padding: 20px 20px 0px;
   }
@@ -356,10 +368,6 @@
     width: 70%;
     display: block;
     margin: 0 auto;
-  }
-
-  .projects-section h5 {
-    margin: 24px 0;
   }
 
   .btn-secondary {
@@ -374,10 +382,6 @@
     max-width: 250px;
   }
 
-  .about-section p {
-    max-width: 650px;
-  }
-
   .skills-section {
     padding: 50px;
   }
@@ -389,11 +393,6 @@
   .project-github-btn {
     margin-bottom: 30px;
   }
-
-  .project-information p,
-  .project-information h5 {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 690px) {
@@ -403,13 +402,23 @@
 }
 
 @media (max-width: 650px) {
-  .project-information p,
-  .project-information h5 {
+  .project-information h5,
+  .project-information p {
     font-size: 12px;
   }
 }
 
 @media (max-width: 576px) {
+  .contact-header h1 {
+    font-size: 50px;
+  }
+
+  .projects-section h5,
+  .project-information h5,
+  .project-information p {
+    font-size: 12px;
+  }
+
   .skills-section {
     padding: 50px;
   }
@@ -418,16 +427,13 @@
     margin: 10px 0;
   }
 
-  .projects-section h5 {
-    font-size: 12px;
-  }
-
-  .project-information p,
-  .project-information h5 {
-    font-size: 12px;
-  }
-
   #aboutProjectsButton {
     margin: 0;
+  }
+}
+
+@media (max-width: 455px) {
+  .contact-header h1 {
+    font-size: 40px;
   }
 }

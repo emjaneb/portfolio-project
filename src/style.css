@@ -15,6 +15,10 @@
   font-family: var(--body-font-family);
 }
 
+#navbar {
+  padding: 0 20px;
+}
+
 /* homepage hero */
 .homepage-hero {
   background-color: #f4f3ef;
@@ -210,9 +214,25 @@
   padding: 70px;
 }
 
-#navbar {
-  padding: 0 20px;
+/* contact page */
+
+.contact-header {
+  background-color: #f4f3ef;
+  padding: 70px;
+  width: 100%;
 }
+
+.contact-header h1 {
+  font-family: var(--heading-font-family);
+  font-size: 70px;
+  margin: 0;
+}
+
+.contact-info {
+  padding: 50px;
+}
+
+/* media queries */
 
 @media (max-width: 1200px) {
   .headshot {
